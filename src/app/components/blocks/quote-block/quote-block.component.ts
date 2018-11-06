@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
  * <example-url>/custom-elements/demos/quote-block.component.demo.html</example-url>
  */
 @Component({
-  selector: 'quote-block',
+  selector: 'tae-quote-block',
   templateUrl: './quote-block.component.html',
   styleUrls: ['./quote-block.component.scss']
 })

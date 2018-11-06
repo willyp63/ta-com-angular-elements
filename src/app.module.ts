@@ -21,9 +21,9 @@ export class AppModule {
   constructor(private injector: Injector) {}
 
   ngDoBootstrap() { 
-    customElements.define('hero-card', createCustomElement(HeroCardComponent, { injector: this.injector }));
-    customElements.define('quote-block', createCustomElement(QuoteBlockComponent, { injector: this.injector }));
-    customElements.define('slanted-image-text', createCustomElement(SlantedImageTextComponent, { injector: this.injector }));
+    customElements.define('tae-hero-card', createCustomElement(HeroCardComponent, { injector: this.injector }));
+    customElements.define('tae-quote-block', createCustomElement(QuoteBlockComponent, { injector: this.injector }));
+    customElements.define('tae-slanted-image-text', createCustomElement(SlantedImageTextComponent, { injector: this.injector }));
   }
 
 }

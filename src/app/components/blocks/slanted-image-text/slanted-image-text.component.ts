@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
  * <example-url>/custom-elements/demos/slanted-image-text.component.demo.html</example-url>
  */
 @Component({
-  selector: 'slanted-image-text',
+  selector: 'tae-slanted-image-text',
   templateUrl: './slanted-image-text.component.html',
   styleUrls: ['./slanted-image-text.component.scss']
 })

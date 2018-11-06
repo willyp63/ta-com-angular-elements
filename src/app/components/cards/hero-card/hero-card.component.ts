@@ -13,7 +13,7 @@ import { Component, Input } from '@angular/core';
  * <example-url>/custom-elements/demos/hero-card.component.demo.html</example-url>
  */
 @Component({
-  selector: 'hero-card',
+  selector: 'tae-hero-card',
   templateUrl: './hero-card.component.html',
   styleUrls: ['./hero-card.component.scss']
 })
