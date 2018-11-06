@@ -1,14 +1,19 @@
-import { NgModule } from '@angular/core';
+import { NgModule, SkipSelf, Optional } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SafePipe } from '@core/pipes/safe.pipe';
+import { BlocksModule } from '@components/blocks/blocks.module';
+import { CardsModule } from '@components/cards/cards.module';
+import { SharedModule } from '@shared/shared.module';
 
 @NgModule({
   imports: [
-    CommonModule
-  ],
-  declarations: [],
-  providers: [
-    SafePipe
+    BlocksModule,
+    CardsModule
   ]
 })
-export class CoreModule { }
+export class CoreModule { 
+  constructor(@Optional() @SkipSelf() core: CoreModule) {
+    if (core) {
+      throw new Error('CoreModule can only be imported once');
+    }
+  }
+}

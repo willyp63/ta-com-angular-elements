@@ -2,20 +2,17 @@ import { NgModule, Injector } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { createCustomElement } from '@angular/elements';
 import { HeroCardComponent } from './hero-card/hero-card.component';
+import { SharedModule } from '@shared/shared.module';
 
 @NgModule({
   imports: [
-    CommonModule
+    SharedModule
   ],
   declarations: [
     HeroCardComponent
+  ],
+  entryComponents: [
+    HeroCardComponent
   ]
 })
-export class CardsModule { 
-  constructor(private injector: Injector) {}
-
-  ngDoBootstrap() {
-    customElements.define('quote-block', createCustomElement(HeroCardComponent, { injector: this.injector }));
-  }
-
-}
+export class CardsModule {}
