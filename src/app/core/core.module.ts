@@ -1,8 +1,6 @@
 import { NgModule, SkipSelf, Optional } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { BlocksModule } from '@components/blocks/blocks.module';
 import { CardsModule } from '@components/cards/cards.module';
-import { SharedModule } from '@shared/shared.module';
 
 /**
  * @ignore
