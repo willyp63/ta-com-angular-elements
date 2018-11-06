@@ -1,0 +1,43 @@
+.hero-card {
+  height: 70vh;
+  padding: 8.5vh 0 0 4vw;
+
+  background-size: cover;
+  background-position: top center;
+
+  h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    > span {
+      margin-bottom: 20px;
+      padding: 8px 16px;
+
+      font-size: 50px;
+      font-weight: bold;
+      letter-spacing: 0.8px;
+      line-height: 65px;
+      white-space: nowrap;
+      text-transform: uppercase;
+      
+      background-color: #fff;
+      color: #666;
+      mix-blend-mode: hard-light;
+    }
+  }
+
+  @media (max-width: 767px) {
+    height: 334px;
+    padding: 6vh 0 0 0;
+
+    > h1 > span {
+      margin-bottom: 12px;
+      padding: 4px 12px;
+
+      font-size: 24px;
+      letter-spacing: 0.4px;
+      line-height: 31px;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+    "navTabConfig": [
+        {
+            "id": "example",
+            "label": "Demo"
+        },
+        {
+            "id": "info",
+            "label": "API"
+        }
+    ],
+    "tsconfig": "./src/tsconfig.app.json"
+}

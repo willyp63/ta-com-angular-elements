@@ -1,0 +1,56 @@
+.slanted-image-text {
+  display: flex;
+  align-items: stretch;
+  min-height: 540px;
+}
+
+.slanted-image-text__img-wrap {
+  background-size: cover;
+  background-position: top left;
+  width: 45%;
+}
+
+.slanted-image-text__text-block {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #182b39;
+  color: white;
+
+  position: relative;
+  width: 55%;
+  padding: 44px 18% 64px 64px;
+}
+
+.slanted-image-text__slant {
+  position: absolute;
+  right: calc(100% - 1px); // -1px makes sure there is no gap between the slant and the text block
+  top: 0;
+  width: 27.273%;
+  height: 100%;
+  fill: #182b39;
+}
+
+.slanted-image-text__icon {
+  height: 28px;
+  font-size: 28px;
+}
+
+.slanted-image-text__sub-title {
+  margin-top: 18px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.slanted-image-text__title {
+  margin-top: 4px;
+  font-size: 32px;
+  line-height: 51.3px;
+}
+
+.slanted-image-text__text {
+  margin: 0;
+  margin-top: 14px;
+  font-size: 18px;
+  line-height: 24.3px;
+}
