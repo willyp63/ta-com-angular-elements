@@ -6,6 +6,9 @@ import { HeroCardComponent } from '@components/cards/hero-card/hero-card.compone
 import { QuoteBlockComponent } from '@components/blocks/quote-block/quote-block.component';
 import { SlantedImageTextComponent } from '@components/blocks/slanted-image-text/slanted-image-text.component';
 
+/**
+ * @ignore
+ */
 @NgModule({
   imports: [
     BrowserModule,

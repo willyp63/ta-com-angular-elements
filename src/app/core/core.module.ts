@@ -4,6 +4,9 @@ import { BlocksModule } from '@components/blocks/blocks.module';
 import { CardsModule } from '@components/cards/cards.module';
 import { SharedModule } from '@shared/shared.module';
 
+/**
+ * @ignore
+ */
 @NgModule({
   imports: [
     BlocksModule,
