@@ -20,7 +20,14 @@ import { Component, Input } from '@angular/core';
 })
 export class QuoteBlockComponent {
 
+  /**
+   * Quote text
+   */
   @Input() quote: string;
+
+  /**
+   * Author of the quote
+   */
   @Input() author: string;
 
 }

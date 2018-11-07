@@ -1,10 +1,10 @@
 {
-  "name": "ta-com-catalog",
+  "name": "ta-com-angular-elements",
   "version": "0.0.0",
   "scripts": {
     "build": "ng build --prod --output-hashing=none && node scripts/post-build.js",
     "dev": "ng serve",
-    "catalog": "npm run build && compodoc -c src/.compodocrc.json -s",
+    "catalog": "npm run build && compodoc -c src/.compodocrc.json -y catalog_theme_styles --theme vagrant  -s",
     "dev-catalog": "npm run build && compodoc -c src/.compodocrc.dev.json -s"
   },
   "private": true,
