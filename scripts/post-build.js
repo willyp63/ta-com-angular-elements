@@ -26,15 +26,17 @@ const copyElementsAssetsToDocumentationFolder = () => {
 };
 
 const copyDemosToDocumentationFolder = () => {
-  fs.readdirSync('./src/components/').forEach(componentDirectoryName => {
-    if (!fs.lstatSync(`./src/components/${componentDirectoryName}`).isDirectory()) return;
-    fs.readdirSync(`./src/components/${componentDirectoryName}`).forEach(fileName => {
-      if (fileName.endsWith('.demo.html')) {
-        const componentName = fileName.match(/^(.*)\.component\.demo\.html$/)[1];
-        let fileContents = fs.readFileSync(`./src/components/${componentDirectoryName}/${fileName}`, 'utf8');
-        fileContents += BOILER_PLATE_DEMO_HTML(componentName);
-        fs.writeFileSync(`./documentation/custom-elements/demos/${fileName}`, fileContents, 'utf8');
-      }
+  fs.readdirSync('./src/app/components/').forEach(moduleDirectoryName => {
+    fs.readdirSync(`./src/app/components/${moduleDirectoryName}`).forEach(componentDirectoryName => {
+      if (!fs.lstatSync(`./src/app/components/${moduleDirectoryName}/${componentDirectoryName}`).isDirectory()) return;
+      fs.readdirSync(`./src/app/components/${moduleDirectoryName}/${componentDirectoryName}`).forEach(fileName => {
+        if (fileName.endsWith('.demo.html')) {
+          const componentName = fileName.match(/^(.*)\.component\.demo\.html$/)[1];
+          let fileContents = fs.readFileSync(`./src/app/components/${moduleDirectoryName}/${componentDirectoryName}/${fileName}`, 'utf8');
+          fileContents += BOILER_PLATE_DEMO_HTML(componentName);
+          fs.writeFileSync(`./documentation/custom-elements/demos/${fileName}`, fileContents, 'utf8');
+        }
+      });
     });
   });
 };
