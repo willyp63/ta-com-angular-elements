@@ -21,9 +21,24 @@ import { Component, Input } from '@angular/core';
 })
 export class SlantedImageTextComponent {
   
+  /**
+   * Image source url
+   */
   @Input() imageSrc: string;
+
+  /**
+   * Sub title text
+   */
   @Input() subTitle: string;
+
+  /**
+   * Title text
+   */
   @Input() title: string;
+
+  /**
+   * Paragraph text
+   */
   @Input() text: string;
 
 }

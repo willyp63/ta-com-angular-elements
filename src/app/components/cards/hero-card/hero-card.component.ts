@@ -21,8 +21,19 @@ import { Component, Input } from '@angular/core';
 })
 export class HeroCardComponent {
   
+  /**
+   * Image source
+   */
   @Input() imageSrc: string;
+
+  /**
+   * First line of text
+   */
   @Input() firstLineText: string;
+
+  /**
+   * Second line of text
+   */
   @Input() secondLineText: string;
 
 }

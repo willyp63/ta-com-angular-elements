@@ -1,0 +1,17 @@
+.content.getting-started,
+.content.modules,
+.content.module {
+  visibility: hidden;
+}
+
+.content .search-results {
+  visibility: visible;
+}
+
+.content .search-results-group {
+  display: none;
+}
+
+.content .search-results-group:first-of-type {
+  display: block;
+}

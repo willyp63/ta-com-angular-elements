@@ -1,0 +1,16 @@
+nav,
+nav > .list {
+  height: 100%;
+  background-color: #406a9c;
+}
+
+nav .title,
+nav .copyright,
+nav .chapter {
+  display: none;
+}
+
+nav .chapter.modules,
+nav .chapter.inner {
+  display: block;
+}
