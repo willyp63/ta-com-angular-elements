@@ -4,7 +4,8 @@
   "scripts": {
     "build": "ng build --prod --output-hashing=none && node scripts/post-build.js",
     "dev": "ng serve",
-    "catalog": "npm run build && compodoc -c src/.compodocrc.json -s"
+    "catalog": "npm run build && compodoc -c src/.compodocrc.json -s",
+    "dev-catalog": "npm run build && compodoc -c src/.compodocrc.dev.json -s"
   },
   "private": true,
   "dependencies": {

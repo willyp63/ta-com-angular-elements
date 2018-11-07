@@ -12,15 +12,23 @@ Run `npm run dev` for a dev server. Navigate to `http://localhost:4200/`. The ap
 
 While developing a component, place the component's demo HTML in `src/index.html` (this file should be left empty on all persistent branches).
 
+## Catalog
+
+Run `npm run catalog` to serve the BE/QA catalog.
+
+Run `npm run dev-catalog` to serve the full catalog.
+
+Both commands will first build the project.
+
+## Build
+
+Run `npm run build` to build the project. The build artifacts will be stored in the `dist/` directory.
+
 ## Code scaffolding
 
 `TODO: update once we start using scaffolding`
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `npm run build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
 ## Running unit tests
 
