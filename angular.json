@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ta-com-catalog": {
+    "ta-com-angular-elements": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ta-com-catalog",
+            "outputPath": "dist/ta-com-angular-elements",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -50,18 +50,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ta-com-catalog:build"
+            "browserTarget": "ta-com-angular-elements:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ta-com-catalog:build:production"
+              "browserTarget": "ta-com-angular-elements:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ta-com-catalog:build"
+            "browserTarget": "ta-com-angular-elements:build"
           }
         },
         "test": {
@@ -95,7 +95,7 @@
         }
       }
     },
-    "ta-com-catalog-e2e": {
+    "ta-com-angular-elements-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "targets": {
@@ -103,11 +103,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ta-com-catalog:serve"
+            "devServerTarget": "ta-com-angular-elements:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ta-com-catalog:serve:production"
+              "devServerTarget": "ta-com-angular-elements:serve:production"
             }
           }
         },
@@ -123,5 +123,5 @@
       }
     }
   },
-  "defaultProject": "ta-com-catalog"
+  "defaultProject": "ta-com-angular-elements"
 }

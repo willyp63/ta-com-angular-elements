@@ -3,14 +3,16 @@ import { Component, Input } from '@angular/core';
 /**
  * Hero Card
  * 
- * ```html
- *   <hero-card
- *     image-src="url(assets/family-kitchen.jpg)"
- *     first-line-text="SMART CHOICES TODAY."
- *     second-line-text="MORE CHOICES TOMORROW."
- *   ></hero-card>
- * ```
- * <example-url>/custom-elements/demos/hero-card.component.demo.html</example-url>
+```html
+<tae-hero-card
+  image-src="url(/assets/family-kitchen.jpg)"
+  first-line-text="SMART CHOICES TODAY."
+  second-line-text="MORE CHOICES TOMORROW."
+>
+</tae-hero-card>
+```
+ *
+ * <example-url>/demos/hero-card.demo.html</example-url>
  */
 @Component({
   selector: 'tae-hero-card',
