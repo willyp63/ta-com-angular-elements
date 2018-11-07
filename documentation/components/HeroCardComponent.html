@@ -52,7 +52,7 @@
     <h3>File</h3>
 </p>
 <p class="comment">
-    <code>src/components/hero-card/hero-card.component.ts</code>
+    <code>src/app/components/cards/hero-card/hero-card.component.ts</code>
 </p>
 
     <p class="comment">
@@ -60,12 +60,12 @@
     </p>
     <p class="comment">
         <p>Hero Card</p>
-<div><pre class="line-numbers"><code class="language-html"> *   &lt;hero-card
- *     image-src=&quot;url(assets/family-kitchen.jpg)&quot;
- *     first-line-text=&quot;SMART CHOICES TODAY.&quot;
- *     second-line-text=&quot;MORE CHOICES TOMORROW.&quot;
- *   &gt;&lt;/hero-card&gt;
- *</code></pre></div><p><example-url>/custom-elements/demos/hero-card.component.demo.html</example-url></p>
+<div><pre class="line-numbers"><code class="language-html">&lt;tae-hero-card
+  image-src=&quot;url(/assets/family-kitchen.jpg)&quot;
+  first-line-text=&quot;SMART CHOICES TODAY.&quot;
+  second-line-text=&quot;MORE CHOICES TOMORROW.&quot;
+&gt;
+&lt;/tae-hero-card&gt;</code></pre></div><p><example-url>/demos/hero-card.demo.html</example-url></p>
 
     </p>
 
@@ -89,7 +89,7 @@
 
             <tr>
                 <td class="col-md-3">selector</td>
-                <td class="col-md-9"><code>hero-card</code></td>
+                <td class="col-md-9"><code>tae-hero-card</code></td>
             </tr>
 
             <tr>
@@ -214,7 +214,7 @@
 
 
     <div class="tab-pane fade active in" id="c-example">
-            <iframe class="exampleContainer" src="/custom-elements/demos/hero-card.component.demo.html">
+            <iframe class="exampleContainer" src="/demos/hero-card.demo.html">
                 <p>no-iframes</p>
             </iframe>
     </div>
@@ -225,8 +225,8 @@
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div class="hero-card" [style.background-image]="imageSrc | safe: \'style\'" role="img">  <h1>    <span>{{ firstLineText }}</span>    <span>{{ secondLineText }}</span>  </h1></div></div>'
-    var COMPONENTS = [{'name': 'HeroCardComponent', 'selector': 'hero-card'},{'name': 'QuoteBlockComponent', 'selector': 'quote-block'},{'name': 'SlantedImageTextComponent', 'selector': 'slanted-image-text'}];
+        var COMPONENT_TEMPLATE = '<div><div class="tae-hero-card" [style.background-image]="imageSrc | safe: \'style\'" role="img">  <h1>    <span>{{ firstLineText }}</span>    <span>{{ secondLineText }}</span>  </h1></div></div>'
+    var COMPONENTS = [{'name': 'HeroCardComponent', 'selector': 'tae-hero-card'},{'name': 'QuoteBlockComponent', 'selector': 'tae-quote-block'},{'name': 'SlantedImageTextComponent', 'selector': 'tae-slanted-image-text'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'HeroCardComponent'};
 </script>

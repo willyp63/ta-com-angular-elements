@@ -3,7 +3,15 @@ import { Component, Input } from '@angular/core';
 /**
  * Quote Block
  * 
- * <example-url>/custom-elements/demos/quote-block.component.demo.html</example-url>
+```html
+<tae-quote-block
+  quote="Globally, individuals in excellent health are seven times more likely to say they are extremely/very confident of achieving retirement than those in poor health."
+  author="-AEGON CENTER FOR LONGEVITY AND RETIREMENT, 'SUCCESSFUL RETIREMENT - HEALTHY AGING AND FINANCIAL SECURITY,' 2017"
+>
+</tae-quote-block>
+```
+ * 
+ * <example-url>/demos/quote-block.demo.html</example-url>
  */
 @Component({
   selector: 'tae-quote-block',

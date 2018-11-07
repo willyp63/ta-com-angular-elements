@@ -3,7 +3,16 @@ import { Component, Input } from '@angular/core';
 /**
  * Slanted Image Text
  * 
- * <example-url>/custom-elements/demos/slanted-image-text.component.demo.html</example-url>
+```html
+<tae-slanted-image-text
+  image-src="url(/assets/tom-wald.jpg)"
+  sub-title="about the author"
+  title="Tom Wald"
+  text="Tom is responsible for overseeing the investment and mutual fund product development functions and sub-adviser selection process. Tom has more than 25 years of investment experience and has managed large mutual funds and sub-advised separate account portfolios.</br></br>Tom holds a bachelor’s degree in political science from Tulane University and an MBA in finance from the Wharton School at the University of Pennsylvania. He has earned the right to use the Chartered Financial Analyst (CFA) designation."
+></tae-slanted-image-text>
+```
+ * 
+ * <example-url>/demos/slanted-image-text.demo.html</example-url>
  */
 @Component({
   selector: 'tae-slanted-image-text',

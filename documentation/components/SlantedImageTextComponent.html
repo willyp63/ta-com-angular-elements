@@ -52,7 +52,7 @@
     <h3>File</h3>
 </p>
 <p class="comment">
-    <code>src/components/slanted-image-text/slanted-image-text.component.ts</code>
+    <code>src/app/components/blocks/slanted-image-text/slanted-image-text.component.ts</code>
 </p>
 
     <p class="comment">
@@ -60,7 +60,12 @@
     </p>
     <p class="comment">
         <p>Slanted Image Text</p>
-<p><example-url>/custom-elements/demos/slanted-image-text.component.demo.html</example-url></p>
+<div><pre class="line-numbers"><code class="language-html">&lt;tae-slanted-image-text
+  image-src=&quot;url(/assets/tom-wald.jpg)&quot;
+  sub-title=&quot;about the author&quot;
+  title=&quot;Tom Wald&quot;
+  text=&quot;Tom is responsible for overseeing the investment and mutual fund product development functions and sub-adviser selection process. Tom has more than 25 years of investment experience and has managed large mutual funds and sub-advised separate account portfolios.&lt;/br&gt;&lt;/br&gt;Tom holds a bachelor’s degree in political science from Tulane University and an MBA in finance from the Wharton School at the University of Pennsylvania. He has earned the right to use the Chartered Financial Analyst (CFA) designation.&quot;
+&gt;&lt;/tae-slanted-image-text&gt;</code></pre></div><p><example-url>/demos/slanted-image-text.demo.html</example-url></p>
 
     </p>
 
@@ -84,7 +89,7 @@
 
             <tr>
                 <td class="col-md-3">selector</td>
-                <td class="col-md-9"><code>slanted-image-text</code></td>
+                <td class="col-md-9"><code>tae-slanted-image-text</code></td>
             </tr>
 
             <tr>
@@ -228,7 +233,7 @@
 
 
     <div class="tab-pane fade active in" id="c-example">
-            <iframe class="exampleContainer" src="/custom-elements/demos/slanted-image-text.component.demo.html">
+            <iframe class="exampleContainer" src="/demos/slanted-image-text.demo.html">
                 <p>no-iframes</p>
             </iframe>
     </div>
@@ -239,8 +244,8 @@
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><section class="slanted-image-text">  <div    class="slanted-image-text__img-wrap"    [style.background-image]="imageSrc | safe: \'style\'"    role="img"  ></div>  <div class="slanted-image-text__text-block">    <span class="slanted-image-text__sub-title">{{ subTitle }}</span>    <span class="slanted-image-text__title">{{ title }}</span>    <p class="slanted-image-text__text">{{ text }}</p>  </div></section></div>'
-    var COMPONENTS = [{'name': 'HeroCardComponent', 'selector': 'hero-card'},{'name': 'QuoteBlockComponent', 'selector': 'quote-block'},{'name': 'SlantedImageTextComponent', 'selector': 'slanted-image-text'}];
+        var COMPONENT_TEMPLATE = '<div><section class="tae-slanted-image-text">  <div    class="tae-slanted-image-text__img-wrap"    [style.background-image]="imageSrc | safe: \'style\'"    role="img"  ></div>  <div class="tae-slanted-image-text__text-block">    <span class="tae-slanted-image-text__sub-title">{{ subTitle }}</span>    <span class="tae-slanted-image-text__title">{{ title }}</span>    <p class="tae-slanted-image-text__text">{{ text }}</p>  </div></section></div>'
+    var COMPONENTS = [{'name': 'HeroCardComponent', 'selector': 'tae-hero-card'},{'name': 'QuoteBlockComponent', 'selector': 'tae-quote-block'},{'name': 'SlantedImageTextComponent', 'selector': 'tae-slanted-image-text'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'SlantedImageTextComponent'};
 </script>
