@@ -1,8 +1,7 @@
 import { NgModule, Injector } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { createCustomElement } from '@angular/elements';
-import { HeroCardComponent } from './hero-card/hero-card.component';
 import { SharedModule } from '@shared/shared.module';
+import { HeroCardComponent } from './hero-card/hero-card.component';
 
 @NgModule({
   imports: [
@@ -15,4 +14,11 @@ import { SharedModule } from '@shared/shared.module';
     HeroCardComponent
   ]
 })
-export class CardsModule {}
+export class CardsModule {
+  
+  constructor(private injector: Injector) {}
+
+  createElements() {
+    customElements.define('tae-hero-card', createCustomElement(HeroCardComponent, { injector: this.injector }));
+  }
+}
